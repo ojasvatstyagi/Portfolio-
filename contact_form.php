@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST["Message"];
 
     // SQL query to insert data into the database
-    $sql = "INSERT INTO your_table_name (Name, Email, Message) VALUES ('$name', '$email', '$message')";
+    $sql = "INSERT INTO contact_form (Name, Email, Message) VALUES ('$name', '$email', '$message')";
 
     if ($conn->query($sql) === TRUE) {
         echo "Data inserted successfully";
