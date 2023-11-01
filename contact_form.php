@@ -3,9 +3,9 @@
 $servername = "localhost";
 $username = "root";
 $database = "James";
-
+$password = "";
 // Create a connection to the MySQL database
-$conn = new mysqli($servername, $username,$database);
+$conn = new mysqli($servername, $username, $password, $database);
 
 // Check the connection
 if ($conn->connect_error) {
